@@ -11,9 +11,9 @@ title: CookZ Guides
 
 {% for image in cookz_images %}
 
-![{{ image.name }}]({{ image.path }})
+![{{ image.name }}]({{ site.baseurl }}{{ image.path }})
 
-[Download Full Resolution]({{ image.path }})
+[Download Full Resolution]({{ site.baseurl }}{{ image.path }})
 
 ---
 
@@ -25,9 +25,9 @@ title: CookZ Guides
 
 {% for image in plant_images %}
 
-![{{ image.name }}]({{ image.path }})
+![{{ image.name }}]({{ site.baseurl }}{{ image.path }})
 
-[Download Full Resolution]({{ image.path }})
+[Download Full Resolution]({{ site.baseurl }}{{ image.path }})
 
 ---
 
