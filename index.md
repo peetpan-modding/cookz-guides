@@ -1,33 +1,41 @@
 ---
 layout: default
-title: CookZ Guides
+title: CookZ Image Guides
 ---
 
-# CookZ Guides
+# CookZ Image Guides
 
-## cookz
+Jump to:
+- [CookZ](#cookz)
+- [CookZPlants](#cookzplants)
+
+---
+
+<a id="cookz"></a>
+## CookZ
 
 {% assign cookz_images = site.static_files | where_exp: "file", "file.path contains '/images/cookz/'" %}
 
 {% for image in cookz_images %}
 
-![{{ image.name }}]({{ site.baseurl }}{{ image.path }})
-
-[Download Full Resolution]({{ site.baseurl }}{{ image.path }})
+<a href="{{ site.baseurl }}{{ image.path }}" target="_blank">
+    <img src="{{ site.baseurl }}{{ image.path }}" style="margin-bottom:20px;">
+</a>
 
 ---
 
 {% endfor %}
 
-## cookzplants
+<a id="cookzplants"></a>
+## CookZPlants
 
 {% assign plant_images = site.static_files | where_exp: "file", "file.path contains '/images/cookzplants/'" %}
 
 {% for image in plant_images %}
 
-![{{ image.name }}]({{ site.baseurl }}{{ image.path }})
-
-[Download Full Resolution]({{ site.baseurl }}{{ image.path }})
+<a href="{{ site.baseurl }}{{ image.path }}" target="_blank">
+    <img src="{{ site.baseurl }}{{ image.path }}" style="margin-bottom:20px;">
+</a>
 
 ---
 
